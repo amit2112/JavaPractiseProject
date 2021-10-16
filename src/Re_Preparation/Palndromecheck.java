@@ -21,6 +21,8 @@ public class Palndromecheck {
 			}
 		}
 		return true;
+		
+		
 	}
 
 	public static void main(String[] args) {
