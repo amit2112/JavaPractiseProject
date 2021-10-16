@@ -12,17 +12,17 @@ public class Palndromecheck {
 	}
 	
 	public static boolean checkPalindrome2(String str){
-		for(int i=0; i<=str.length(); i++){
-			for(int j=str.length(); j>=0; j--){
-				if(str.charAt(i) != str.charAt(j)){
+		for(int i=0; i<=str.length()-1; i++){
+			char temp = str.charAt(i);
+			for(int j=str.length()-1; j>=0; j--){
+				if(temp == str.charAt(j)){
 					System.out.println(str.charAt(i)+" "+str.charAt(j));
+					System.out.println(temp);
 					return false;
 				}
 			}
 		}
 		return true;
-		
-		
 	}
 
 	public static void main(String[] args) {
